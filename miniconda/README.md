@@ -9,5 +9,5 @@
  \
 启动命令:
 ```
- docker run -d --name miniconda -p 8022:22 -e LOCAL_USER_ID=$UID -e LOCAL_USER_NAME=$(whoami)  --gpus all -v <local>:/project --shm-size=<本机内存>  canetaper/miniconda:23.10.0 /usr/sbin/sshd -D
+ docker run -d --name miniconda -p 8022:22 -e LOCAL_USER_ID=$UID -e LOCAL_USER_NAME=$(whoami)  --gpus all -v <local>:/project --shm-size=<本机内存>  canetaper/miniconda:latest /usr/sbin/sshd -D
 ```
