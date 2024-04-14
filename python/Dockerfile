@@ -1,4 +1,4 @@
-FROM python:3.11-slim-bullseye
+FROM python:3.7-slim-bullseye
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 ENV TZ=Asia/Shanghai \
     DEBIAN_FRONTEND=noninteractive
